@@ -10,6 +10,8 @@ app.debug = True
 @app.route('/', methods=['GET', 'POST'])
 def hello_world():
     articles = Articles()
+    # for i in articles:
+    #     print(i)
     return render_template('index.html', articles=articles)
 
 
